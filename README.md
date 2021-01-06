@@ -2,7 +2,7 @@
 
 This project implements a Kohonen Self Organizing Map that clusters an input set of colors based on their features over a 100 by 100 grid of neurons. The training input set that will be fed to the map is a set of 24 randomly chosen RGB colors, with shades of red, green, blue, teal, pink and yellow. A time varying learning rate is used which is defined as follows:
 
-$\alpha(k) = \alpha_0 exp{(-\frac{k}{T})}$, where $k$ is the current epoch and $T$ is the total number of epochs and  $\alpha_0$ is 0.8
+![equation](https://latex.codecogs.com/gif.latex?%5Calpha%28k%29%20%3D%20%5Calpha_0%20exp%7B%28-%5Cfrac%7Bk%7D%7BT%7D%29%7D), where *k* is the current epoch, *T* is the total number of epochs and ![equation](https://latex.codecogs.com/gif.latex?%5Calpha_0) is 0.8
 
 
 The topological neighbourhood, $N_{i,j}(k)$ of neuron $j$ around the winning neuron $i$ is defined as follows:
